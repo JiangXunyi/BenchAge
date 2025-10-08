@@ -1,0 +1,84 @@
+/llm_benchmark_factuality.egg-info
+*.pyc
+# TruthfulQA data
+data/TruthfulQA/**
+!data/TruthfulQA/time-sensitive-data/
+!data/TruthfulQA/time-sensitive-data/truthfulqa-time-sensitive.jsonl
+!data/TruthfulQA/time-sensitive-data/truthfulqa-time-sensitive-meta.jsonl
+!data/TruthfulQA/time-sensitive-data/websearch-20250718_225246/
+!data/TruthfulQA/time-sensitive-data/websearch-20250718_225246/**
+
+# 1- Ignore everything under NaturalQuestion …
+data/NaturalQuestion/**
+
+# 2- BUT keep the time-sensitive folder itself
+!data/NaturalQuestion/time-sensitive-data/
+
+# 3- AND keep the two files inside it
+!data/NaturalQuestion/time-sensitive-data/naturalquestion-time-sensitive-meta.jsonl
+!data/NaturalQuestion/time-sensitive-data/naturalquestion-time-sensitive.jsonl
+
+
+# BoolQ data
+data/BoolQ/**
+!data/BoolQ/time-sensitive-data/
+!data/BoolQ/time-sensitive-data/boolq-time-sensitive.jsonl
+!data/BoolQ/time-sensitive-data/boolq-time-sensitive-meta.jsonl
+!data/BoolQ/time-sensitive-data/websearch-20250718_225246/
+!data/BoolQ/time-sensitive-data/websearch-20250718_225246/**
+
+# HaluEval
+data/HaluEval/**
+!data/HaluEval/time-sensitive-data/
+!data/HaluEval/time-sensitive-data/halueval-time-sensitive.jsonl
+!data/HaluEval/time-sensitive-data/halueval-time-sensitive-meta.jsonl
+
+# FreshQA
+data/FreshQA/**
+!data/FreshQA/time-sensitive-data/
+!data/FreshQA/time-sensitive-data/freshqa-time-sensitive.jsonl
+!data/FreshQA/time-sensitive-data/freshqa-time-sensitive-meta.jsonl
+!data/FreshQA/time-sensitive-data/websearch-20250718_104315/
+!data/FreshQA/time-sensitive-data/websearch-20250718_104315/**
+
+# SelfAware
+data/SelfAware/**
+!data/SelfAware/time-sensitive-data/
+!data/SelfAware/time-sensitive-data/selfaware-time-sensitive.jsonl
+!data/SelfAware/time-sensitive-data/selfaware-time-sensitive-meta.jsonl
+!data/SelfAware/time-sensitive-data/websearch-20250718_104315/
+!data/SelfAware/time-sensitive-data/websearch-20250718_104315/**
+
+# TriviaQA
+data/TriviaQA/**
+!data/TriviaQA/time-sensitive-data/
+!data/TriviaQA/time-sensitive-data/triviaqa-time-sensitive.jsonl
+!data/TriviaQA/time-sensitive-data/triviaqa-time-sensitive-meta.jsonl
+!data/TriviaQA/time-sensitive-data/websearch-20250718_104315/
+!data/TriviaQA/time-sensitive-data/websearch-20250718_104315/**
+
+
+!data/Evaluation/humaneval/websearch
+!data/Evaluation/humaneval/websearch/human_eval.json
+!data/Evaluation/humaneval/websearch/time-sensitive-105-results.json
+!data/Evaluation/humaneval/websearch/time-sensitive-105.jsonl
+data/Evaluation-old
+
+data/Evaluation/boolq
+data/Evaluation/freshqa
+data/Evaluation/halueval
+data/Evaluation/naturalquestion
+data/Evaluation/selfaware
+data/Evaluation/triviaqa
+data/Evaluation/truthfulqa
+
+data/Evaluation/humaneval*
+data/Evaluation/a*
+
+data/FactScore
+data/inference_opensource
+data/*.ipynb
+data/SituatedQA
+data/BiasinBio
+data/time-sensitive
+.vscode
